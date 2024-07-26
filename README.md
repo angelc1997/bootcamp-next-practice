@@ -6,7 +6,7 @@
 
 - [功能說明](#功能說明)
 - [技術架構](#技術架構)
-- [建置說明](#建置說明)
+- [專案說明](#專案說明)
 
 # 功能說明
 
@@ -23,7 +23,7 @@
 - 版本控制：GitHub
 - 其他套件：react-toastify
 
-# 建置說明
+# 專案說明
 
 該專案使用 [Next.js](https://nextjs.org/) 框架，並透過 [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) 快速建立專案架構。
 
@@ -33,9 +33,9 @@
 
 需要使用 [Node.js](https://nodejs.org/en) 執行腳本命令，並使用 `npm` 下載及管理所需套件。
 
-這邊同時註記開發時所使用的版本號
+同時註記開發時所使用的版本號
 
-➡️ Node：v20.11.1
+➡️ Node.js：v20.11.1
 
 ```bash
 node -v
@@ -48,11 +48,15 @@ git -v
 
 ```
 
+### 建立專案架構
+
 ➡️ 建立 next 專案
 
 ```bash
 npx create-next-app@latest
 ```
+
+### GitHub 版本控制
 
 ➡️ 連接 Gihub 進行版本控制，同時創建 develop 分支進行開發
 
