@@ -12,13 +12,17 @@ export default function CreateForm({ addItem }: Props) {
 
   const handleAddButton = () => {
     const itemName = item.trim();
-    const itemPrice = Number(price);
-    if (!isNaN(itemPrice) && itemName) {
-      addItem({ item, price: itemPrice, isIncome });
+    const itemPrice = parseInt(price);
+    console.log(typeof itemPrice);
+    console.log("項目名稱", itemName, "價格", itemPrice);
+    if (!itemName) {
+      alert("請輸入項目名稱");
+    } else if (isNaN(itemPrice)) {
+      alert("請輸入項目價格");
+    } else {
+      addItem({ item: itemName, price: itemPrice, isIncome });
       setItem("");
       setPrice("");
-    } else {
-      alert("請輸入項目名稱及金額");
     }
   };
 
