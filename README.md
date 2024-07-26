@@ -1,4 +1,4 @@
-# [Next 記帳小工具](https://nextjs-practice-liart-eight.vercel.app/)
+# [Next 記帳小工具](https://next-project-account-app.vercel.app/)
 
 註冊登入帳號密碼，提供個人收入以及支出紀錄。
 
