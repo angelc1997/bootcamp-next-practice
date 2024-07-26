@@ -56,19 +56,28 @@ npx create-next-app@latest
 
 ➡️ 連接 Gihub 進行版本控制，同時創建 develop 分支進行開發
 
+以 main 來取代原本的 master
+
 ```bash
-// 以 main 來取代原本的 master
 git branch -M main
+```
 
-// 連接遠端Github
+連接遠端 Github
+
+```bash
 git remote add origin https://github.com/angelc1997/bootcamp-next-project.git
+```
 
-// 推送至正式版本
+推送至正式版本
+
+```bash
 git push -u origin main
+```
 
-// 以develop分支進行程式碼開發與更新
+以 develop 分支進行程式碼開發與更新
+
+```bash
 git branch develop
-
 ```
 
 ### 啟動伺服器
@@ -79,7 +88,9 @@ git branch develop
 npm run dev
 ```
 
-### 環境變數設定 .env.local
+### 環境變數設定
+
+➡️ 使用 `.env.local` 設置 Firebase
 
 - API_KEY
 - AUTH_DOMAIN
@@ -99,4 +110,8 @@ npm i firebase
 npm i react-toastify
 ```
 
-### 部署至 Vercel
+### 使用 Vercel 自動部署
+
+- 連接 GitHub 帳戶
+- 選擇部署 Repo 以及使用框架
+- 添加環境變數
