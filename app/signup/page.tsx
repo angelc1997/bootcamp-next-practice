@@ -3,7 +3,6 @@
 import React, { useState, FormEvent, ChangeEvent } from "react";
 import { useRouter } from "next/navigation";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { auth } from "../../utils/firebase";
 import {
   GoogleAuthProvider,
@@ -110,6 +109,9 @@ export default function Signup() {
           break;
         case "auth/invalid-credential":
           showNotify("error", "帳密錯誤");
+          break;
+        case "auth/network-request-failed":
+          showNotify("error", "無網路連線");
           break;
         default:
           showNotify("error", "發生錯誤");

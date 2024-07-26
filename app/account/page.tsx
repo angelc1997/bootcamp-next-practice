@@ -17,6 +17,7 @@ import {
   query,
   where,
 } from "firebase/firestore";
+import router from "next/router";
 
 interface AccountItem {
   id: string;
@@ -73,7 +74,7 @@ export default function Account() {
     signOut(auth)
       .then(() => {
         console.log("登出成功");
-        window.location.href = "/";
+        router.push("/");
       })
       .catch((error) => {
         console.log(error);
@@ -112,6 +113,7 @@ export default function Account() {
     );
   };
 
+  // 如果沒有登入則提供回首頁
   if (!user) {
     return (
       <div className="w-4/5 flex flex-col justify-center items-center mx-auto">
